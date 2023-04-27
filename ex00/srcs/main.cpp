@@ -1,6 +1,6 @@
 #include "Zombie.hpp"
 
-// #define DEB
+#define DEB
 
 int main(){
 #ifdef DEB

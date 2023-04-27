@@ -3,7 +3,6 @@
 Zombie::Zombie(){
 }
 
-
 Zombie::~Zombie(){
 	std::cout << name << ": destructor called" << std::endl;
 }
