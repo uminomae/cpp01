@@ -6,6 +6,10 @@ HumanB::HumanB(std::string s)
 }
 
 void HumanB::attack()const{
+	if (weapon == NULL){
+		std::cout << name << " attacks with their no weapon" << weapon->getType() << std::endl; 
+		return;
+	}
 	std::cout << name << " attacks with their " << weapon->getType() << std::endl; 
 }
 
