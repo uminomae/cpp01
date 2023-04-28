@@ -12,6 +12,7 @@ DFLAGS		:= -MMD -MP
 SRCDIR		= srcs
 SRCS		:= 	\
 srcs/main.cpp \
+srcs/CppFile.cpp \
 
 
 # find srcs -type  f -name '*.c'
@@ -63,9 +64,7 @@ d: re
 
 s:
 	make
-	./cppm testfile a b
-	./cppm testfile 123
-	./cppm testfile 123 asdfa asdfs
+	./cppm testfile aaaa bbbb newfile
  
 #=============================
 #color
