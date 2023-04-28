@@ -1,6 +1,6 @@
 #include "Zombie.hpp"
 
-#define DEB
+// #define DEB
 
 int main(){
 	Zombie *horde;
@@ -10,7 +10,7 @@ int main(){
 		horde[i].announce();
 	delete[] horde;
 #ifdef DEB
-	// system("leaks -q cppm");
+	system("leaks -q cppm");
 #endif
 	return 0;
 }

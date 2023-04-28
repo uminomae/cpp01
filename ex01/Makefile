@@ -62,6 +62,10 @@ re: fclean all
 d: CXXFLAGS +=  -g -fsanitize=address -fsanitize=undefined
 d: re
 
+s:
+	make
+	./cppm
+
 #=============================
 #color
 #=============================

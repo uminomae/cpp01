@@ -3,9 +3,8 @@
 Zombie::Zombie(){
 }
 
-
 Zombie::~Zombie(){
-	std::cout << name << ": destructor called" << std::endl;
+	std::cout << PINK201 << name << ": destructor called" << std::endl;
 }
 
 Zombie::Zombie(std::string s){
@@ -13,5 +12,5 @@ Zombie::Zombie(std::string s){
 }
 
 void Zombie::announce(){
-	std::cout << name << ": BraiiiiiiinnnzzzZ..." << std::endl;
+	std::cout << PINK198 << name << ": BraiiiiiiinnnzzzZ..." << std::endl;
 }

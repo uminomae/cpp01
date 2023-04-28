@@ -12,9 +12,7 @@ DFLAGS		:= -MMD -MP
 SRCDIR    = srcs
 SRCS	:= 	\
 srcs/main.cpp \
-srcs/Zombie.cpp \
-srcs/newZombie.cpp \
-srcs/randomChump.cpp \
+
 
 # find srcs -type  f -name '*.c'
 #=============================
