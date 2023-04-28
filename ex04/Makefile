@@ -65,6 +65,7 @@ d: re
 s:
 	make
 	./cppm testfile aaaa bbbb newfile
+	./cppm testfil aaaa bbbb newfile
  
 #=============================
 #color

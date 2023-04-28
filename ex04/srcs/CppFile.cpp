@@ -19,7 +19,7 @@ void CppFile::replaceS1(std::string &line){
 	}
 }
 
-void CppFile::makeFile(bool isReplace){
+void CppFile::buildFile(bool isReplace){
 	std::ifstream read_buf;
 	open_read_file(fName, read_buf);
 	std::ofstream w_file;
@@ -41,13 +41,13 @@ void CppFile::makeFile(bool isReplace){
 }
 
 void CppFile::replace(){
-	makeFile(true);
+	buildFile(true);
 #ifdef DEB_FILE
 	myPutStr("" ,"Replade the file", PINK201);
 #endif
 }
 
 void CppFile::sed_is_for_losers(){
-	makeFile(false);
+	buildFile(false);
 	replace();
 }

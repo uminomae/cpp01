@@ -13,7 +13,7 @@ public:
 	CppFile(char **av);
 
 	void replace();
-	void makeFile(bool isReplace);
+	void buildFile(bool isReplace);
 	void replaceS1(std::string &line);
 	void sed_is_for_losers();
 };

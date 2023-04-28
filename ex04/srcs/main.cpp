@@ -1,7 +1,7 @@
 #include "CppFile.hpp"
 #include "ex04.hpp"
 
-// #define DEB
+#define TEST
 
 void myPutStr(std::string s1, std::string s2, std::string color){
 	std::cout << color << s1 << s2 << RESET_COLOR << std::endl;
@@ -24,6 +24,7 @@ void open_write_file(std::string newFileName, std::ofstream &w_file){
 }
 
 int main(int ac, char **av){
+#ifdef TEST
 	if (ac != 5){
 		myPutStr("" ,"invalid value", RED);
 		CppFile filename;
@@ -40,9 +41,8 @@ int main(int ac, char **av){
 		CppFile filename(av);
 		filename.sed_is_for_losers();
 	}
-#ifdef DEB
-	std::cout << filename.fName << " " << filename.s1 
-	<< " " << filename.s2 << " " << filename.newFileName <<  std::endl;
 #endif
+	(void)ac;
+	(void)av;
 	return 0;
 }
