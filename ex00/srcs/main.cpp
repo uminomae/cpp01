@@ -1,14 +1,13 @@
 #include "Zombie.hpp"
 
-// #define DEB
+#define TEST
 
 int main(){
-#ifdef DEB
+#ifdef TEST
 	Zombie *foo = newZombie("foo");
 	foo->announce();
 	delete foo;
 	randomChump("pre-cure");
-	// system("leaks -q cppm");
 #endif
 	return 0;
 }

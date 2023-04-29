@@ -1,4 +1,5 @@
 #include "Harl.hpp"
+#include "ex05.hpp"
 
 Harl::Harl(){
 	m_FP[0] = &Harl::debug;
@@ -15,10 +16,13 @@ Harl::Harl(){
 void Harl::complain(std::string level){
 	int i = 0;
 	while (i < 4){
-		if (Level[i] == level)
+		if (Level[i] == level){
 			(this->*m_FP[i])();
+			return ;
+		}
 		i++;
 	}
+	std::cout << RED << level << " not found" << std::endl;;
 }
 
 void myPutStr(std::string title, std::string en, std::string ja, std::string color){
@@ -33,8 +37,8 @@ void myPutStr(std::string title, std::string en, std::string ja, std::string col
 void Harl::debug(void){
 	myPutStr(
 		"DEBUG : ",
-		"There have been people who have fought evil for the last twenty years. It's not just google.",
-		"この20年間、邪悪と戦ってきた人々がいます。 グーグルだけではありません。",
+		"For the last 20 years, there are people who have been fighting \"Don't be evil!\" Not just google.",
+		"この20年間、邪悪になるな! と戦ってきた人々がいます。 グーグルだけではありません。隣の人に聞きましょう。",
 		PINK183
 	);
 }
@@ -43,7 +47,7 @@ void Harl::info(void){
 	myPutStr(
 		"INFO : ",
 		"C is not the only tool for fighting evil. The code for P is also important.",
-		"C だけが唯一のツールではありません。鼻以外の悪魔とも戦いましょう。 お歌の中に大事な教えがあります。",
+		"C だけが唯一のツールではありません。鼻以外の悪魔とも戦います。 お歌の中に大事な教えがあります。",
 		PINK170
 	);
 }
@@ -52,7 +56,7 @@ void Harl::warning(void){
 	myPutStr(
 		"WARNING : ",
 		"Plus plus to C, similarly \"pretty\" should be plus plus.",
-		"もうCは卒業です。プラスプラスし、そして「かわいい」もプラスプラスしてください。",
+		"もうCは卒業です。プラスプラスします。同様に「かわいい」もプラスプラスしてください。",
 		PINK201
 	);
 }
@@ -60,8 +64,8 @@ void Harl::warning(void){
 void Harl::error(void){
 	myPutStr(
 		"ERROR : ",
-		"Drive and develop with love. we need the standard library of mankind",
-		"Loveで開発してください。人類の標準ライブラリもプラスプラスなんです。",
+		"Do Love-driven development. plus plus the standard library of mankind too",
+		"Loveで開発してください。人類の標準ライブラリもプラスプラスです。",
 		PINK198
 	);
 }

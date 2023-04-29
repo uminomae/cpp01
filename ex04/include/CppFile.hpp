@@ -15,7 +15,7 @@ public:
 	void replace();
 	void buildFile(bool isReplace);
 	void replaceS1(std::string &line);
-	void sed_is_for_losers();
+	void BuildAndReplase();
 };
 
 #endif

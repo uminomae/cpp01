@@ -6,9 +6,10 @@ const std::string PINK201 = "\033[38;5;201m";
 
 int main(){
 	std::string string = "HI THIS IS BRAIN";
-	std::string *stringPTR = &string;
-	std::string &stringREF = string;
+	std::string *stringPTR = &string; 
+	std::string &stringREF = string; //&をつけると参照
 
+// print　Cと同じ
 	std::cout << PINK198 << "memory addresss" << std::endl;
 	std::cout << PINK201;
 	std::cout << "string    :" << &string << std::endl;

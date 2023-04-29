@@ -2,8 +2,8 @@
 #include "HumanA.hpp"
 #include "HumanB.hpp"
 
-// #define DEB1
-// #define DEB2
+#define DEB1
+#define DEB2
 
 #ifdef DEB2
 const std::string PINK170 = "\033[38;5;170m";
@@ -67,6 +67,21 @@ int main(){
 		myPutStr("club.getType() :", club.getType(), PINK198);
 		jim.attack();
 	}
+	{
+		myPutStr("======", "=======================", PINK201);
+		myPutStr("case :", " HumanB  NULL", PINK201);
+		myPutStr("======", "=======================", PINK201);
+		Weapon  club = Weapon("crude spiked club");
+		myPutStr("Variable declaration :", "club", PINK170);
+		HumanB B("B");
+		myPutStr("Variable declaration :", "B", PINK170);
+		B.attack();
+		B.setWeapon(club);
+		myPutStr("B.setWeapon(club) :", "", PINK183);
+		myPutStr("club.getType() :", club.getType(), PINK198);
+		B.attack();
+	}
+
 		myPutStr("======", "=======================", PINK201);
 #endif
 	return 0;

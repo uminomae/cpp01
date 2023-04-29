@@ -47,7 +47,7 @@ void CppFile::replace(){
 #endif
 }
 
-void CppFile::sed_is_for_losers(){
+void CppFile::BuildAndReplase(){
 	buildFile(false);
 	replace();
 }

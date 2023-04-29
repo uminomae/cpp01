@@ -1,7 +1,7 @@
 #include "CppFile.hpp"
 #include "ex04.hpp"
 
-#define TEST
+// #define TEST
 
 void myPutStr(std::string s1, std::string s2, std::string color){
 	std::cout << color << s1 << s2 << RESET_COLOR << std::endl;
@@ -24,22 +24,28 @@ void open_write_file(std::string newFileName, std::ofstream &w_file){
 }
 
 int main(int ac, char **av){
+	CppFile filename;
+	filename.fName = "testfile";
+	filename.s1 = "aa";
+	filename.s2 = "BBBB";
+	filename.newFileName = "newfile";
+	filename.BuildAndReplase();
 #ifdef TEST
 	if (ac != 5){
 		myPutStr("" ,"invalid value", RED);
-		CppFile filename;
+		CppFile filename2;
 		myPutStr("" ,"fName", PINK198);
-		std::cin >> filename.fName;
+		std::cin >> filename2.fName;
 		myPutStr("" ,"s1", PINK198);
-		std::cin >> filename.s1;
+		std::cin >> filename2.s1;
 		myPutStr("" ,"s2", PINK198);
-		std::cin >> filename.s2;
+		std::cin >> filename2.s2;
 		myPutStr("" ,"newFileName", PINK198);
-		std::cin >> filename.newFileName;
-		filename.sed_is_for_losers();
+		std::cin >> filename2.newFileName;
+		filename2.BuildAndReplase();
 	}else{
-		CppFile filename(av);
-		filename.sed_is_for_losers();
+		CppFile filename2(av);
+		filename2.BuildAndReplase();
 	}
 #endif
 	(void)ac;

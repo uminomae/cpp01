@@ -3,7 +3,7 @@
 #=============================
 NAME		:= cppm
 CXX			:= c++
-CXXFLAGS	:= -Wall -Wextra -Werror -O 
+CXXFLAGS	:= -Wall -Wextra -Werror -O -std=c++98
 RM			:= rm -f
 DFLAGS		:= -MMD -MP
 #=============================

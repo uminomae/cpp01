@@ -3,7 +3,7 @@
 #=============================
 NAME		:= cppm
 CXX			:= c++
-CXXFLAGS	:= -Wall -Wextra -Werror -O 
+CXXFLAGS	:= -Wall -Wextra -Werror -O -std=c++98
 RM			:= rm -f
 DFLAGS		:= -MMD -MP
 #=============================
@@ -64,8 +64,8 @@ d: re
 
 s:
 	make
-	./cppm testfile aaaa bbbb newfile
-	./cppm testfil aaaa bbbb newfile
+	./cppm testfile aaaa CCCC newfile2
+	./cppm testfil aaaa DDDD newfile2
  
 #=============================
 #color
