@@ -62,7 +62,7 @@ d: CXXFLAGS +=  -g -fsanitize=address -fsanitize=undefined
 d: re
 
 s:
-	make
+	make d
 	./cppm
 
 #=============================

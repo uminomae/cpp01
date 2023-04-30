@@ -63,7 +63,7 @@ d: CXXFLAGS +=  -g -fsanitize=address -fsanitize=undefined
 d: re
 
 s:
-	make
+	make d
 	./cppm testfile aaaa CCCC newfile2
 	./cppm testfil aaaa DDDD newfile2
  
