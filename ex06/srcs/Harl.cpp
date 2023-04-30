@@ -65,8 +65,8 @@ void myPutStr(std::string title, std::string en, std::string ja, std::string col
 void Harl::debug(void){
 	myPutStr(
 		"DEBUG : ",
-		"For the last 20 years, there are people who have been fighting \"Don't be evil!\" Not just google.",
-		"この20年間、邪悪になるな! と戦ってきた人々がいます。 グーグルだけではありません。隣の人に聞きましょう。",
+		"For the last 20 years, there are people who have fought against Don't be evil! Let's google together.",
+		"この20年間、邪悪になるな! と戦ってきた人達がいます。 隣の人とぐーぐりましょう。 二人は（ry",
 		PINK183
 	);
 }
@@ -93,7 +93,7 @@ void Harl::error(void){
 	myPutStr(
 		"ERROR : ",
 		"Do Love-driven development. plus plus the standard library of mankind too",
-		"Loveで開発してください。人類の標準ライブラリもプラスプラスです。",
+		"Loveで開発してください。人類の標準ライブラリもプラスプラスなんです。",
 		PINK198
 	);
 }
@@ -101,8 +101,8 @@ void Harl::error(void){
 void Harl::other(void){
 	myPutStr(
 		"",
-		"[Probably a passing fairy. please don't mind]",
-		"おそらくただの妖精です。どうぞお気になさらず",
+		"[Delusion is also a plus plus.]",
+		"おそらく妖精さんの仕業ですね",
 		RED
 	);
 }

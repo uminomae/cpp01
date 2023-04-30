@@ -63,11 +63,9 @@ d: re
 
 s:
 	make d
-	./harlFilter "INFO"
-	./harlFilter "WARNING"
-	./harlFilter "WARN"
-	./harlFilter "WARNING" "2"
-	./harlFilter
+	./harlFilter "DOKI-DOKI" "WAKU-WAKU"
+	./harlFilter "DEBUG"
+	./harlFilter "PRETTY"
  
 #=============================
 #color

@@ -3,7 +3,7 @@
 
 int main(int ac, char **av){
 	if (ac != 2){
-		std::cout << RED << "Argument has invalid value" << RESET_COLOR << std::endl;;
+		std::cout << RED << "Magic can only be used one at a time" << RESET_COLOR << std::endl;
 		return 0;
 	}
 	Harl harl;
